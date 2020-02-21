@@ -1,7 +1,5 @@
 package fr.softview.birdad.domain;
 
-import java.time.LocalDateTime;
-
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class Advertisement {
@@ -12,10 +10,10 @@ public class Advertisement {
 	private String adSnapshotUrl;
     
     @JsonProperty(value = "ad_delivery_start_time")
-	private LocalDateTime adDeliveryStartTime;
+	private String adDeliveryStartTime;
     
     @JsonProperty(value = "ad_delivery_stop_time")
-	private LocalDateTime adDeliveryStopTime;
+	private String adDeliveryStopTime;
     
     @JsonProperty(value = "id")
 	private Long adID;
@@ -40,19 +38,19 @@ public class Advertisement {
 		this.adSnapshotUrl = adSnapshotUrl;
 	}
 
-	public LocalDateTime getAdDeliveryStartTime() {
+	public String getAdDeliveryStartTime() {
 		return adDeliveryStartTime;
 	}
 
-	public void setAdDeliveryStartTime(LocalDateTime adDeliveryStartTime) {
+	public void setAdDeliveryStartTime(String adDeliveryStartTime) {
 		this.adDeliveryStartTime = adDeliveryStartTime;
 	}
 
-	public LocalDateTime getAdDeliveryStopTime() {
+	public String getAdDeliveryStopTime() {
 		return adDeliveryStopTime;
 	}
 
-	public void setAdDeliveryStopTime(LocalDateTime adDeliveryStopTime) {
+	public void setAdDeliveryStopTime(String adDeliveryStopTime) {
 		this.adDeliveryStopTime = adDeliveryStopTime;
 	}
 
