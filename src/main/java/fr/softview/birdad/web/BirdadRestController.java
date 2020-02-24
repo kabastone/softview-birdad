@@ -27,7 +27,7 @@ public class BirdadRestController {
 		Map<String, String> uriVariables = new HashMap<>();
 		uriVariables.put("ad_reached_countries", "FR");
 		uriVariables.put("search_terms", "paris");
-		uriVariables.put("access_token", "EAAt4qpgBMEQBAGedBGbhVslAi2QZAyVQtLOnhZCtJDAH7Y89xZBZBcvUSXsJxP52sZAdPVeLeINs8UPd4cZABlVtvZC8QG8qVKpFZB91n15S6t5mLjTMBati9ymvuFq4lBPURJFzMNfPyt8j0Ugcfxm473TuC4bgjAlJ5crKu330pZCIaM5ct9GZCaL18JXGHepDHS4ZBt7EVIit9Hy1FNQiOWG");
+		uriVariables.put("access_token", "EAAt4qpgBMEQBADiuWGEOjdy2qb4N4a0iUhcUk7UCim0EfaKi6S3vFKUxoaOmc6BqC4Vp49LViwjRE2n9xd1RN41WYCoY0VbBQE5QotgddGBKuKlVgNv3i2ryiNODYx8QhiHyEcaDDW8F3JnbqzZBRPb5HiZAc2deilXzVVmNKJHTfEKqLJ");
 		
 		Response response = restTemplate.getForObject(url, Response.class, uriVariables);
 		log.info("======== REST API WITH REST TEMPLATE============================== ");
