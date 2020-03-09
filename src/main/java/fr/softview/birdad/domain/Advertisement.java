@@ -17,6 +17,9 @@ public class Advertisement {
     
     @JsonProperty(value = "id")
 	private Long adID;
+    private Page page;
+    
+    
 	
 	public Advertisement() {
 		super();
@@ -62,13 +65,22 @@ public class Advertisement {
 		this.adID = adID;
 	}
 
+	public Page getPage() {
+		return page;
+	}
+
+	public void setPage(Page page) {
+		this.page = page;
+	}
+
 	@Override
 	public String toString() {
 		return "Advertisement {pageID='" + pageID + '\'' + 
 				", adSnapshotUrl='" + adSnapshotUrl + '\'' +
 				", adDeliveryStartTime='" + adDeliveryStartTime + '\'' +
 				", adDeliveryStopTime='" + adDeliveryStopTime + '\'' +
-				", adID=" + adID + "}";
+				", adID=" + adID + '\'' +
+				", Page=" + page.toString() + " }";
 	}
 	
 	
